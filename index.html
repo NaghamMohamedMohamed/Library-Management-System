@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Library System</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <!-- Don't Forget To open with Live Server -->
+    <!-- Page 1 : Enter Number of Books -->
+    <div id="userInput">
+        <div class="input-container">
+            <label for="name">Enter the number of books in your Library : </label>
+            <input type="text" id="booksNum">
+            <button id="okButton">OK</button>
+        </div>
+    </div>
+
+    <!-- Page 2 : Book Details Form ( Initially Hidden ) -->
+    <form id="BooksInput">
+        <div class="form-container">
+            <div class="formElements-container">
+                <h3>Enter The Book's Info : </h3>
+                    <div>
+                        <label for="BName">Book's Name :</label>
+                        <input type="text" id="BName">
+                        <span id="bookNameError" class="error"></span>
+                    </div>
+                    <div>
+                        <label for="Price">Book's Price :</label>
+                        <input type="number" id="Price">
+                        <span id="priceError" class="error"></span>
+                    </div>
+                    <div>
+                        <label for="AName">Author's Name :</label>
+                        <input type="text" id="AName">
+                        <span id="authorNameError" class="error"></span>
+                    </div>
+                    <div>
+                        <label for="AuthorEmail">Author's Email :</label>
+                        <input type="email" id="AuthorEmail" placeholder="example@gmail.com">
+                        <span id="emailError" class="error"></span>
+                    </div>
+                    <div class="button-container">
+                        <button type="button" id="addBook">Add</button>
+                        <button type="reset">Reset</button>
+                    </div>
+                </div>
+            </div>
+    </form>
+
+    <div class="table-container">
+        <table id="BooksDataBase">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Author Name</th>
+                    <th>Author E-mail</th>
+                    <th>Editing Options</th>
+                </tr>
+            </thead>
+            <tbody id="BooksTableInfo"></tbody>
+        </table>
+    </div>
+
+
+    <script type="module" src="./script.js"></script>
+
+</body>
+</html>

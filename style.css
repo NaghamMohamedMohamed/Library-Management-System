@@ -1,0 +1,210 @@
+/************************ First Page : Books Number Input ************************/
+body 
+{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+
+/* The background styling for the three pages */
+#userInput , #BooksInput , .table-container
+{
+    background-image: url('1Background.png');
+    background-size: cover;
+    background-position: center;
+    /* Center the entire container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#userInput , #BooksInput
+{
+    /* Ensures it stays on top of the image */
+	position: absolute;   
+    width: 100vw;
+    height: 100vh;
+}
+
+.input-container , .form-container
+{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+	font-size: 23px;
+    /* Keeps the form compact ( adjusts the width of an element based on its content )*/
+    width: fit-content; 
+}
+
+#formElements-container
+{
+    margin-left: 50px;
+}
+
+.formElements-container h3 
+{
+    margin-bottom: 15px;
+}
+
+.formElements-container div 
+{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+input 
+{
+    padding: 10px;
+    margin: 6px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+	font-size: 23px;
+	width: 100px;
+}
+
+label 
+{
+    width: 180px; /* Ensures uniform width for alignment */
+    text-align: left;
+}
+
+/* Centering the buttons */
+.button-container 
+{
+    display: flex;
+    justify-content: center; /* Centers buttons */ 
+    margin-top: 15px;
+    gap: 30px;
+}
+
+button 
+{
+    padding: 8px 12px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+	font-size: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+button:hover 
+{
+    background-color: darkblue;
+}
+
+.error 
+{
+    color: red;
+    font-size: 14px;
+    margin-left: 15px;
+}
+
+
+/************************ Second Page : Books Info Input Form ************************/
+
+/* Hide Book Form Initially and display it upon valid input and pressing ok button in the first page */
+#BooksInput
+{
+    display: none;
+}
+
+.form-container 
+{
+    width: 900px;  
+    margin-left: 20%;
+    margin-top: 7%;
+}
+
+.form-container input 
+{
+    width: 50%; 
+    margin: 10px 0;
+}
+
+/************************ Third Page : Displaying Books Details With Editing Options ************************/
+
+.table-container 
+{
+    width: 100vw;
+    height: 100vh;    
+}
+
+/* Table Styles */
+#BooksDataBase 
+{
+    display: none;
+    /* Keeps the form compact ( adjusts the width of an element based on its content )*/
+    width: fit-content;
+    max-width: 1500px;
+    border-collapse: collapse;
+    position: absolute;
+    font-size: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    /* Set max-height as taller than this , the table will allow vertical scrollinge */
+    max-height: 600px;
+    /* Enable vertical scrolling */ 
+    overflow-y: auto; 
+    scroll-behavior: smooth;
+}
+
+/* Header styling */
+th 
+{
+    background-color: #d7e2f8; 
+    font-weight: bold;
+}
+
+/* Table cell styling */
+th, td 
+{
+    border: 1px solid black;
+    padding: 15px;
+    text-align: center;
+    /* Prevents excessive stretching */ 
+    max-width: 420px; 
+}
+
+/* Table rows */
+td
+{
+    /* White background for cells */
+    background-color: white; 
+    /* Ensures content wraps */
+    word-wrap: break-word;  
+    overflow-wrap: break-word;
+    /* Allows multi-line text */
+    white-space: normal; 
+}
+
+/* Fix the width of the last column (buttons) */
+td:last-child 
+{
+    /* Prevents buttons from wrapping */
+    white-space: nowrap; 
+    text-align: center;
+}
+
+/* Buttons remain in a single line */
+td:last-child button 
+{
+    display: inline-block;
+    white-space: nowrap;
+    /* Adds spacing between buttons */
+    margin: 5px; 
+}
+
+/* Ensuring edit inputs don't expand too much */
+.edit-input 
+{
+    width: 100%;
+    max-width: 130px;
+}
