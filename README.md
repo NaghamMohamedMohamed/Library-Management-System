@@ -6,13 +6,15 @@ This project is a dynamic book database table built using HTML, CSS, and JavaScr
 
 
 ## 🚀 Features
-✅ Dynamic Table Display – Shows book data in a clean, structured format.
+✅ **Library Management** – Store and manage an unlimited number of book details.
 
-✅ Editable Fields – Users can edit book details directly in the table.
+✅ **Dynamic Table Display** – Shows book data in a clean, structured format.
+
+✅ **Editable Fields** – Users can edit book details directly in the table.
 
 ## 🛠 Technologies Used
-HTML – Structure of the table and UI elements.
+**HTML** – Structure of the table and UI elements.
 
-CSS – Styling for a visually appealing layout.
+**CSS** – Styling for a visually appealing layout.
 
-JavaScript – Enables interactivity like editing table fields.
+**JavaScript** – Enables interactivity like editing table fields.
