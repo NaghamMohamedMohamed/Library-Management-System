@@ -1,5 +1,4 @@
-# Library-Management-System_JS Course_ITI
-
+# Simple Library Management System
 
 ## 📚 Book Database Table
 This project is a dynamic book database table built using HTML, CSS, and JavaScript. It displays book records in a structured table format, allowing users to view and edit book details with an intuitive interface.
